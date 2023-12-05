@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Funkcija</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var kvadrat = function(x) {
+                if (typeof x === 'number') {
+                    return x * x;
+                } else {
+                    return "Pogreška: Očekuje se broj.";
+                }
+            };
+
+            console.log(kvadrat(5)); 
+            console.log(kvadrat("a"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Funkcija</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function VelikaSlova(arr) {
+                var filtriranoPolje = arr.filter(function (element) {
+                    return /[A-Z]/.test(element) || element.length >= 5;
+                });
+
+                return filtriranoPolje;
+            }
+
+            var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji','je', 'proradio'];
+            var rezultat =VelikaSlova(arr);
+
+            console.log(rezultat);
+
+        </script>
+    </body>
+</html>

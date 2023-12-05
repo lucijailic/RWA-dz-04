@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Savrseni broj</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function randomBrojevi(min, max) {
+                for (let i = 0; i < 5; i++) {
+                    const randomBroj = Math.floor(Math.random() * (max - min + 1)) + min;
+                    console.log(randomBroj);
+                }
+            }
+
+            randomBrojevi(1, 100);
+        </script>
+    </body>
+</html>

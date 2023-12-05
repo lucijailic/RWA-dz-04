@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Savrseni broj</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function savrseniBrojevi(doBroja) {
+                for (let i = 1; i <= doBroja; i++) {
+                    if (SavrsenBroj(i)) {
+                         console.log(i);
+                    }
+                }
+            }
+
+            function SavrsenBroj(broj) {
+                let suma = 0;
+
+                for (let i = 1; i < broj; i++) {
+                    if (broj % i == 0) {
+                        suma += i;
+                    }
+                }
+
+                return suma == broj;
+            }
+
+            savrseniBrojevi(1000);
+        </script>
+    </body>
+</html>

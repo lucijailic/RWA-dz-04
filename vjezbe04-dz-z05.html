@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Objekt</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            const osoba1 ={firstName:"Marko", lastName:"Maric", age:40, eyeColor:"black"};
+            let txt = "";
+            for (let x in osoba1) {
+                 txt += osoba1[x] + " ";
+            }
+            document.write(txt + "<br/>");
+           
+            const osoba2 ={firstName:"Luka", lastName:"Lukic", age:24, eyeColor:"blue"};
+            txt = "";
+            for (let x in osoba2) {
+                 txt += osoba2[x] + " ";
+            }
+            document.write(txt + "<br/>");
+        </script>
+    </body>
+</html>

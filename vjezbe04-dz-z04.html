@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Polje</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            const polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+            document.write(polje.length + "<br/>");
+
+            const OdNajveceg=polje.sort(function(a, b){return b - a});
+            document.write("Od najveceg:" + OdNajveceg+"<br/>");
+            const OdNajmanjeg=polje.sort(function(a, b){return a - b});
+            document.write("Od najmanjeg:" + OdNajmanjeg + "<br/>");
+
+            OdNajmanjeg.pop();
+            OdNajmanjeg.push("19","22");
+            document.write(OdNajmanjeg + "<br/>");
+
+            const polje2=new Array("Banana","Orange","Apple","Mango");
+            const polje_final=polje.concat(polje2);
+            document.write(polje_final + "<br/>");
+        </script>
+    </body>
+</html>

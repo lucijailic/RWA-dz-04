@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Prosti brojevi</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function jeLiBrojProst(broj){
+                if(broj<=1){
+                    return false;
+                }
+                for (var i = 2; i <= Math.sqrt(broj); i++) {
+                    if (broj % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            
+            for(var i=1;i<=1000;i++){
+                if(jeLiBrojProst(i)){
+                    console.log(i);
+                    document.body.innerHTML += i + "<br>";
+                }
+            }
+        </script>
+    </body>
+</html>
